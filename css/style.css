@@ -6,11 +6,11 @@ body{
 header{
     text-align: left;
     margin-top: 50px;
-    padding: 15px 15% 15px 0;
+    padding: 5px 15% 5px 0;
 }
 
-#parallelogram {
-    width: 50%;
+#head_para{
+    width: 60%;
     min-width: 200px;
     background: blue;
     /* Skew */
@@ -18,13 +18,15 @@ header{
     -moz-transform: skew(-50deg);
     -o-transform: skew(-50deg);
     transform: skew(-50deg);
+    transform: translate(-30px);
  }
 
- h1{
+ #rev_head_para{
     -webkit-transform: skew(50deg);
     -moz-transform: skew(50deg);
     -o-transform: skew(50deg);
     transform: skew(50deg);
-    padding-left: 0 0 0 20%;
+    margin: 0;
+    transform: translate(30px);
     background-color: pink;
 }
