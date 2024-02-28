@@ -1,5 +1,10 @@
+:root{
+    --bg_color: #262626;
+    --header_color: #004080;
+}
+
 body{
-    background-color: #303742;
+    background-color: var(bg_color);
     color: white;
 }
 
@@ -7,28 +12,42 @@ header{
     text-align: left;
     margin-top: 50px;
     padding: 10px 15% 10px 0;
+    margin-bottom: 30px;
 }
 
 h1{
     font-size: 4em;
+    padding-left: 10%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 #head_para{
-    width: 60%;
-    min-width: 200px;
-    background: #004080;
+    width: 300px;
+    background: var(--header_color);
     box-shadow: 10px 10px black;
     /* Skew */
     -webkit-transform: skew(-50deg);
     -moz-transform: skew(-50deg);
     -o-transform: skew(-50deg);
-    transform: skew(-50deg) translate(-50px);
+    transform: skew(-50deg) translate(-80px);
  }
 
  #rev_head_para{
     -webkit-transform: skew(50deg);
     -moz-transform: skew(50deg);
     -o-transform: skew(50deg);
-    transform: skew(50deg) translate(50px);
-    margin: 0;
+    transform: skew(50deg) translate(80px);
+}
+
+.subhead_pr{
+    right: 0;
+    width: 250px;
+    background: var(--header_color);
+    box-shadow: 8px 8px black;
+    /* Skew */
+    -webkit-transform: skew(50deg);
+    -moz-transform: skew(50deg);
+    -o-transform: skew(50deg);
+    transform: skew(50deg) translate(80px);
 }
