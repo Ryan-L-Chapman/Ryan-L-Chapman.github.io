@@ -4,8 +4,12 @@
 }
 
 body{
-    background-color: var(bg_color);
+    background-color: var(--bg_color);
     color: white;
+}
+
+img{
+    transform: scale(.20);
 }
 
 header{
@@ -22,8 +26,12 @@ h1{
     white-space: nowrap;
 }
 
+.right{
+    text-align: right;
+}
+
 #head_para{
-    width: 300px;
+    width: 500px;
     background: var(--header_color);
     box-shadow: 10px 10px black;
     /* Skew */
@@ -34,6 +42,7 @@ h1{
  }
 
  #rev_head_para{
+    /*Reverse Skew*/
     -webkit-transform: skew(50deg);
     -moz-transform: skew(50deg);
     -o-transform: skew(50deg);
@@ -41,13 +50,21 @@ h1{
 }
 
 .subhead_pr{
-    right: 0;
     width: 250px;
     background: var(--header_color);
-    box-shadow: 8px 8px black;
+    box-shadow: 8px -8px black;
     /* Skew */
     -webkit-transform: skew(50deg);
     -moz-transform: skew(50deg);
     -o-transform: skew(50deg);
     transform: skew(50deg) translate(80px);
+}
+
+.rev_subhead_pr{
+    padding: 5px 0px 5px 15px;
+    /*Reverse Skew*/
+    -webkit-transform: skew(-50deg);
+    -moz-transform: skew(-50deg);
+    -o-transform: skew(-50deg);
+    transform: skew(-50deg) translate(-80px);
 }
