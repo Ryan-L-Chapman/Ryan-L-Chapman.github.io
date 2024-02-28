@@ -5,5 +5,18 @@ body{
 
 header{
     text-align: left;
-    
+    margin-top: 30px;
+    padding: 10% 20px 30% 20px;
+    background-color: blue;
 }
+
+#parallelogram {
+    width: 130px; 
+    height: 75px;
+    background: pink;
+    /* Skew */
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+ }
