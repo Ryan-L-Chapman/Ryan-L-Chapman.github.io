@@ -2,7 +2,7 @@
     --bg_color: #262626;
     --header_color: #004080;
     --shadow_color: black;
-    --img_scale: .25;
+    --img_scale: .4;
 }
 
 body{
@@ -15,11 +15,11 @@ img{
 }
 
 header{
-    position: static;
+    position: relative;
+    left: 0;
     text-align: left;
     margin-top: 50px;
-    padding: 5px 25% 5px 0;
-    margin-bottom: 30px;
+    padding: 5px 25% 10px 0;
 }
 
 h1{
@@ -27,6 +27,7 @@ h1{
     padding-left: 10%;
     overflow: hidden;
     white-space: nowrap;
+    margin: 0;
 }
 
 .right{
@@ -35,20 +36,19 @@ h1{
 
 .left{
     text-align: left;
-    margin: 15px, 5px, 0px, 15px;
 }
 
 #picture{
-    transform: scale(var(--img_scale));
+    /*transform: scale(var(--img_scale));*/
     position: absolute;
-    top: 30px;
-    left: 15%;
+    top: -100px;
+    left: -40%;
 }
 
 #head_para{
     width: 500px;
     background: var(--header_color);
-    box-shadow: 10px 10px var(--shadow_color);
+    box-shadow: 12px 10px var(--shadow_color);
     /* Skew */
     -webkit-transform: skew(-50deg);
     -moz-transform: skew(-50deg);
@@ -66,9 +66,9 @@ h1{
 
 .subhead_pr{
     margin-left: 50%;
-    width: 150px;
+    padding: 3px, 0, 3px, 150px;
     background: var(--header_color);
-    box-shadow: 8px -8px var(--shadow_color);
+    box-shadow: -8px 8px var(--shadow_color);
     /* Skew */
     -webkit-transform: skew(50deg);
     -moz-transform: skew(50deg);
