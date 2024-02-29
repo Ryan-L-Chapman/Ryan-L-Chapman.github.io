@@ -3,7 +3,6 @@
     --header_color: #004080;
     --shadow_color: black;
     --tb_color: white;
-    --img_scale: .45;
     --header_width: 675px;
 }
 
@@ -24,7 +23,7 @@ header{
 
 h1{
     font-size: 4em;
-    padding-left: 40%;
+    padding-left: 10%;
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
@@ -39,10 +38,10 @@ h1{
 }
 
 #picture{
-    transform: scale(var(--img_scale));
-    position: absolute;
-    top: -130px;
-    left: -240px;
+    height: 500px;
+    right: 20px;
+    bottom: -60px;
+    padding: 30px;
 }
 
 #head_para{
@@ -64,10 +63,10 @@ h1{
 }
 
 .subhead_pr{
-    width: 300px;
-    position: absolute;
+    width: 500px;
+    position: relative;
     margin-top: 30px;
-    padding: 3px, 40px, 3px, 0;
+    font-size: 2em;
     background: var(--header_color);
     box-shadow: -8px 8px var(--shadow_color);
     /* Skew */
@@ -91,4 +90,5 @@ h1{
     top: 30px;
     color: black;
     background-color: var(--tb_color);
+    box-shadow: 0px 0px 3px 10px black;
 }
