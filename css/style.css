@@ -1,6 +1,7 @@
 :root{
     --bg_color: #262626;
     --header_color: #004080;
+    --img_scale: .25;
 }
 
 body{
@@ -9,7 +10,7 @@ body{
 }
 
 img{
-    transform: scale(.20);
+    transform: scale(var(--img_scale));
     padding: 0;
 }
 
@@ -36,6 +37,10 @@ h1{
     margin: 15px, 5px, 0px, 10px;
 }
 
+#picture{
+    transform: scale(var(--img_scale));
+}
+
 #head_para{
     width: 500px;
     background: var(--header_color);
@@ -56,6 +61,7 @@ h1{
 }
 
 .subhead_pr{
+    align-self: right;
     width: 250px;
     background: var(--header_color);
     box-shadow: 8px -8px black;
