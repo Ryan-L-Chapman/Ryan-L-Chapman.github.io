@@ -3,6 +3,7 @@
     --header_color: #004080;
     --shadow_color: black;
     --img_scale: .45;
+    --header_width: 550px;
 }
 
 body{
@@ -11,16 +12,18 @@ body{
 }
 
 header{
+    width: var(--header_width);
+    min-width: var(--header_width);
     position: relative;
     left: 0;
     text-align: left;
     margin-top: 50px;
-    padding: 5px 25% 10px 0;
+    padding: 5px 0 10px 0;
 }
 
 h1{
     font-size: 4em;
-    padding-left: 15%;
+    padding-left: 30px;
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
@@ -28,12 +31,10 @@ h1{
 
 .right{
     text-align: right;
-    width: 50vw;
 }
 
 .left{
     text-align: left;
-    width: 50vw;
 }
 
 #picture{
@@ -44,7 +45,6 @@ h1{
 }
 
 #head_para{
-    width: 60vw;
     background: var(--header_color);
     box-shadow: 12px 10px var(--shadow_color);
     /* Skew */
@@ -63,9 +63,12 @@ h1{
 }
 
 .subhead_pr{
-    width: 35vw;
-    margin-left: 50%;
-    padding: 3px, 0, 3px, 150px;
+    text-align: right;
+    width: 300px;
+    position: absolute;
+    right: -80px;
+    margin-top: 30px;
+    padding: 3px, 40px, 3px, 0;
     background: var(--header_color);
     box-shadow: -8px 8px var(--shadow_color);
     /* Skew */
