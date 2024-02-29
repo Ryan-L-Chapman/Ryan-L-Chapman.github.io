@@ -2,8 +2,9 @@
     --bg_color: #262626;
     --header_color: #004080;
     --shadow_color: black;
+    --tb_color: white;
     --img_scale: .45;
-    --header_width: 550px;
+    --header_width: 675px;
 }
 
 body{
@@ -23,7 +24,7 @@ header{
 
 h1{
     font-size: 4em;
-    padding-left: 30px;
+    padding-left: 40%;
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
@@ -40,8 +41,8 @@ h1{
 #picture{
     transform: scale(var(--img_scale));
     position: absolute;
-    top: -90px;
-    left: -270px;
+    top: -130px;
+    left: -240px;
 }
 
 #head_para{
@@ -63,10 +64,8 @@ h1{
 }
 
 .subhead_pr{
-    text-align: right;
     width: 300px;
     position: absolute;
-    right: -80px;
     margin-top: 30px;
     padding: 3px, 40px, 3px, 0;
     background: var(--header_color);
@@ -85,4 +84,11 @@ h1{
     -moz-transform: skew(-50deg);
     -o-transform: skew(-50deg);
     transform: skew(-50deg) translate(-80px);
+}
+
+.textbox{
+    position: absolute;
+    top: 30px;
+    color: black;
+    background-color: var(--tb_color);
 }
