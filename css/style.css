@@ -1,6 +1,7 @@
 :root{
     --bg_color: #262626;
     --header_color: #004080;
+    --shadow_color: black;
     --img_scale: .25;
 }
 
@@ -11,13 +12,13 @@ body{
 
 img{
     transform: scale(var(--img_scale));
-    padding: 0;
 }
 
 header{
+    position: static;
     text-align: left;
     margin-top: 50px;
-    padding: 10px 15% 10px 0;
+    padding: 5px 25% 5px 0;
     margin-bottom: 30px;
 }
 
@@ -34,17 +35,20 @@ h1{
 
 .left{
     text-align: left;
-    margin: 15px, 5px, 0px, 10px;
+    margin: 15px, 5px, 0px, 15px;
 }
 
 #picture{
     transform: scale(var(--img_scale));
+    position: absolute;
+    top: 30px;
+    left: 15%;
 }
 
 #head_para{
     width: 500px;
     background: var(--header_color);
-    box-shadow: 10px 10px black;
+    box-shadow: 10px 10px var(--shadow_color);
     /* Skew */
     -webkit-transform: skew(-50deg);
     -moz-transform: skew(-50deg);
@@ -61,10 +65,10 @@ h1{
 }
 
 .subhead_pr{
-    align-self: right;
-    width: 250px;
+    margin-left: 50%;
+    width: 150px;
     background: var(--header_color);
-    box-shadow: 8px -8px black;
+    box-shadow: 8px -8px var(--shadow_color);
     /* Skew */
     -webkit-transform: skew(50deg);
     -moz-transform: skew(50deg);
