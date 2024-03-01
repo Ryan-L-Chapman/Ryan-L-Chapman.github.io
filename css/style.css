@@ -3,7 +3,7 @@
     --header_color: #004080;
     --shadow_color: black;
     --tb_color: #737373;
-    --header_width: 675px;
+    --header_width: 750px;
 }
 
 body{
@@ -35,12 +35,16 @@ h1{
 
 .right{
     float: right;
-    width: 50vw;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .left{
     float: left;
-    width: 50vw;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 #picture{
@@ -69,8 +73,7 @@ h1{
 }
 
 .subhead_pr{
-    width: 500px;
-    position: relative;
+    width: 50vw;
     margin-top: 30px;
     font-size: 2em;
     background: var(--header_color);
@@ -79,20 +82,20 @@ h1{
     -webkit-transform: skew(50deg);
     -moz-transform: skew(50deg);
     -o-transform: skew(50deg);
-    transform: skew(50deg) translate(80px);
+    transform: skew(50deg) translate(-25px);
 }
 
 .rev_subhead_pr{
-    padding: 5px 0px 5px 0;
+    padding: 5px 0px 5px 60px;
     /*Reverse Skew*/
     -webkit-transform: skew(-50deg);
     -moz-transform: skew(-50deg);
     -o-transform: skew(-50deg);
-    transform: skew(-50deg) translate(-80px);
+    transform: skew(-50deg);
 }
 
 .textbox{
-    margin: 30px 30px 0 30px;
+    margin: 30px 40px 0 30px;
     padding: 10px;
     color: black;
     background-color: var(--tb_color);
