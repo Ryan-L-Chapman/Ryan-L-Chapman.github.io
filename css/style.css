@@ -91,6 +91,7 @@ h1{
 }
 
 .rev_subhead_pr{
+    text-align: left;
     padding: 5px 0px 5px 180px;
     /*Reverse Skew*/
     -webkit-transform: skew(-50deg);
@@ -112,7 +113,8 @@ h1{
     transform: skew(-50deg) translate(25px);
 }
 
-.rev_subhead_pr{
+.rev_subhead_pl{
+    text-align: right;
     padding: 5px 180px 5px 0;
     /*Reverse Skew*/
     -webkit-transform: skew(50deg);
@@ -122,6 +124,7 @@ h1{
 }
 
 .textbox{
+    text-align: left;
     margin: 30px var(--tb_right_margin, 30px) 0 var(--tb_left_margin, 30px);
     padding: 10px;
     color: black;
