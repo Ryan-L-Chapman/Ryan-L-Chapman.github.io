@@ -2,7 +2,7 @@
     --bg_color: #262626;
     --header_color: #004080;
     --shadow_color: black;
-    --tb_color: #737373;
+    --tb_color: #404040;
     --header_width: 750px;
     --column_outside_margin: 60px;
 }
@@ -91,8 +91,8 @@ h1{
 }
 
 .rev_subhead_pr{
-    text-align: left;
-    padding: 5px 0px 5px 180px;
+    text-align: center;
+    padding: 5px 200px 5px 200px;
     /*Reverse Skew*/
     -webkit-transform: skew(-50deg);
     -moz-transform: skew(-50deg);
@@ -110,12 +110,12 @@ h1{
     -webkit-transform: skew(-50deg);
     -moz-transform: skew(-50deg);
     -o-transform: skew(-50deg);
-    transform: skew(-50deg) translate(25px);
+    transform: skew(-50deg) translate(-96px);
 }
 
 .rev_subhead_pl{
-    text-align: right;
-    padding: 5px 180px 5px 0;
+    text-align: center;
+    padding: 5px 200px 5px 200px;
     /*Reverse Skew*/
     -webkit-transform: skew(50deg);
     -moz-transform: skew(50deg);
@@ -124,6 +124,7 @@ h1{
 }
 
 .textbox{
+    min-width: 200px;
     text-align: left;
     margin: 30px var(--tb_right_margin, 30px) 0 var(--tb_left_margin, 30px);
     padding: 10px;
