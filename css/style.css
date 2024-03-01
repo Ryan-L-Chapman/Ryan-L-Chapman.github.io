@@ -1,8 +1,9 @@
 :root{
     --bg_color: #262626;
     --header_color: #004080;
+    --footer_color: #1a1a1a;
     --shadow_color: black;
-    --tb_color: #404040;
+    --tb_color: #333333;
     --header_width: 850px;
     --column_outside_margin: 60px;
 }
@@ -24,11 +25,23 @@ header{
 }
 
 h1{
-    font-size: 4em;
+    font-size: 3em;
     padding-left: 10%;
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
+}
+
+footer{
+    background-color: var(--footer_color);
+    height: 200px;
+    text-align: center;
+}
+
+i{
+    padding: 0 10px 0 10px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 .full{
@@ -81,7 +94,7 @@ h1{
 .subhead_pr{
     width: 50vw;
     margin-top: 40px;
-    font-size: 3em;
+    font-size: 2em;
     background: var(--header_color);
     box-shadow: -8px 8px var(--shadow_color);
     /* Skew */
@@ -93,7 +106,7 @@ h1{
 
 .rev_subhead_pr{
     text-align: center;
-    padding: 5px 200px 5px 200px;
+    padding: 5px 200px 5px 10%;
     /*Reverse Skew*/
     -webkit-transform: skew(-50deg);
     -moz-transform: skew(-50deg);
@@ -104,7 +117,7 @@ h1{
 .subhead_pl{
     width: 50vw;
     margin-top: 40px;
-    font-size: 3em;
+    font-size: 2em;
     background: var(--header_color);
     box-shadow: 8px 8px var(--shadow_color);
     /* Skew */
@@ -125,7 +138,7 @@ h1{
 }
 
 .textbox{
-    font-size: 2em;
+    font-size: 18px;
     min-width: 200px;
     text-align: left;
     margin: 30px var(--tb_right_margin, 30px) 0 var(--tb_left_margin, 30px);
