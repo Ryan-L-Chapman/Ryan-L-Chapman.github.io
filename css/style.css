@@ -3,11 +3,12 @@
     --header_color: #004080;
     --shadow_color: black;
     --tb_color: #404040;
-    --header_width: 750px;
+    --header_width: 850px;
     --column_outside_margin: 60px;
 }
 
 body{
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
     background-color: var(--bg_color);
     color: white;
 }
@@ -53,10 +54,10 @@ h1{
 }
 
 #picture{
-    height: 500px;
+    height: 600px;
     right: 20px;
     bottom: -60px;
-    padding: 30px;
+    padding: 40px 0 0 0;
 }
 
 #head_para{
@@ -79,8 +80,8 @@ h1{
 
 .subhead_pr{
     width: 50vw;
-    margin-top: 30px;
-    font-size: 2em;
+    margin-top: 40px;
+    font-size: 3em;
     background: var(--header_color);
     box-shadow: -8px 8px var(--shadow_color);
     /* Skew */
@@ -102,8 +103,8 @@ h1{
 
 .subhead_pl{
     width: 50vw;
-    margin-top: 30px;
-    font-size: 2em;
+    margin-top: 40px;
+    font-size: 3em;
     background: var(--header_color);
     box-shadow: 8px 8px var(--shadow_color);
     /* Skew */
@@ -124,11 +125,12 @@ h1{
 }
 
 .textbox{
+    font-size: 2em;
     min-width: 200px;
     text-align: left;
     margin: 30px var(--tb_right_margin, 30px) 0 var(--tb_left_margin, 30px);
     padding: 10px;
-    color: black;
+    color: white;
     background-color: var(--tb_color);
     box-shadow: 0px 0px 15px 2px black;
 }
