@@ -4,6 +4,7 @@
     --footer_color: #1a1a1a;
     --shadow_color: black;
     --tb_color: #333333;
+    --text_color: white;
     --header_width: 850px;
     --column_outside_margin: 60px;
 }
@@ -11,7 +12,7 @@
 body{
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     background-color: var(--bg_color);
-    color: white;
+    color: var(--text_color);
 }
 
 header{
@@ -30,18 +31,6 @@ h1{
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
-}
-
-footer{
-    background-color: var(--footer_color);
-    height: 200px;
-    text-align: center;
-}
-
-i{
-    padding: 0 10px 0 10px;
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
 }
 
 .full{
@@ -146,4 +135,27 @@ i{
     color: white;
     background-color: var(--tb_color);
     box-shadow: 0px 0px 15px 2px black;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: var(--footer_color);
+    height: 200px;
+    text-align: center;
+}
+
+i{
+    padding: 0 10px 0 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: var(--text_color);
+}
+#foot{
+    padding: 50px, 0, 50px 0;
 }
