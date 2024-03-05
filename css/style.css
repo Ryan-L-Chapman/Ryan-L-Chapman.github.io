@@ -13,6 +13,7 @@ body{
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     background-color: var(--bg_color);
     color: var(--text_color);
+    margin: 0;
 }
 
 header{
@@ -142,6 +143,7 @@ h1{
 footer{
     background-color: var(--footer_color);
     height: 200px;
+    width: 100vw;
     text-align: center;
 }
 
@@ -151,11 +153,13 @@ i{
 
 a{
     text-decoration: none;
+    color: var(--text_color);
 }
 
 a:visited{
     color: var(--text_color);
 }
+
 #foot{
     padding: 50px, 0, 50px 0;
 }
