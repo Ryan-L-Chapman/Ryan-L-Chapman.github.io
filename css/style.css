@@ -166,3 +166,10 @@ a:visited{
 #foot{
     padding: 80px;
 }
+
+.vertical{
+    padding: 0, 2px, 0, 2px;
+    background-color: var(--text_color);
+    margin-left: 4px;
+    margin-right: 4px;
+}
