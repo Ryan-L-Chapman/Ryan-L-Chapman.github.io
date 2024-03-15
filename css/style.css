@@ -5,6 +5,7 @@
     --shadow_color: black;
     --tb_color: #333333;
     --text_color: white;
+    --footer_text_color: #a6a6a6;
     --header_width: 850px;
     --column_outside_margin: 60px;
 }
@@ -147,20 +148,21 @@ footer{
     clear: both;
     position: relative;
     top: 50px;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 i{
     padding: 0 12px 0 12px;
+    color: var(--footer_text_color);
 }
 
 a{
     text-decoration: none;
-    color: var(--text_color);
+    color: var(--footer_text_color);
 }
 
 a:visited{
-    color: var(--text_color);
+    color: var(--footer_text_color);
 }
 
 #foot{
@@ -168,8 +170,8 @@ a:visited{
 }
 
 .vertical{
-    padding: 0, 1px, 0, 1px;
-    background-color: var(--text_color);
-    margin-left: 8px;
-    margin-right: 8px;
+    padding: 0 1px 0 1px;
+    background-color: var(--footer_text_color);
+    margin-left: 14px;
+    margin-right: 14px;
 }
