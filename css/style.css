@@ -149,6 +149,7 @@ footer{
     position: relative;
     top: 50px;
     font-size: 22px;
+    color: var(--footer_text_color);
 }
 
 i{
